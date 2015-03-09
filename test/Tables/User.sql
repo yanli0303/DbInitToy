@@ -1,0 +1,17 @@
+IF OBJECT_ID ('dbo.User') IS NOT NULL
+	DROP TABLE dbo.User
+GO
+
+CREATE TABLE [User]
+(
+	UserID INT IDENTITY NOT NULL,
+	Alias VARCHAR(20) NOT NULL UNIQUE,
+	DisplayName NVARCHAR(100) NOT NULL,
+	Email VARCHAR(100) NOT NULL UNIQUE,
+
+	CONSTRAINT PK_User PRIMARY KEY (UserID ASC)
+)
+GO
+
+INSERT INTO [User] VALUES('yali', 'Li, Yan(Peter)', 'yali@microstrategy.com')
+GO

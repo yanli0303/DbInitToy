@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script ConnectionString="SERVER=.; DATABASE=ActivityToy; UID=ActivityUser; PWD=111111">
+  <!--Tables-->
+  <File path="Tables\Priority.sql"/>
+  <File path="Tables\Importance.sql"/>
+  <File path="Tables\User.sql"/>
+  <File path="Tables\Group.sql"/>
+  <File path="Tables\UserGroup.sql"/>
+  <File path="Tables\Activity.sql"/>
+  <File path="Tables\ActivityAttendee.sql"/>
+  
+  <!--Procedures-->
+  <File path="Procedures\GetByID.sql"/>
+  <File path="Procedures\DeleteByID.sql"/>
+  <File path="Procedures\EditImportance.sql"/>
+  <File path="Procedures\EditPriority.sql"/>
+  <File path="Procedures\EditActivity.sql"/>
+  <File path="Procedures\GetActiveActivities.sql"/>
+  <File path="Procedures\EditActivityAttendee.sql"/>
+  <File path="Procedures\ActivityAttendeeDeleteByID.sql"/>
+  <File path="Procedures\ActivityAttendeeGetByActivityID.sql"/>
+  <File path="Procedures\ActivityAttendeeGetByID.sql"/>
+  <File path="Procedures\UserGetByAlias.sql"/>
+  <File path="Procedures\EditUser.sql"/>
+  <File path="Procedures\EditGroup.sql"/>
+  <File path="Procedures\EditUserGroup.sql"/>
+  <File path="Procedures\UserGroupDeleteByID.sql"/>
+  <File path="Procedures\GetGroupsOfUser.sql"/>
+  <File path="Procedures\GetUsersOfGroup.sql"/>
+</Script>
